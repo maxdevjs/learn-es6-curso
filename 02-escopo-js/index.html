@@ -6,13 +6,17 @@
 </head>
 <body>
   <script>
-    var animal = 'cat';
-    console.log(animal);
-    {
-      let animal = 'dog';
-      console.log(animal);
+    const secretNumber = 28;
+
+    const will = {
+      name: 'Will',
+      age: 53
     }
-    console.log(animal);
+    console.log(will);
+
+    Object.freeze(will);
+    will.age = 26;
+    console.log(will);
   </script>
 </body>
 </html>
